@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+            
+ </head>
+<body>
+    <script>
+
+        var tchat = (function() {
+            var jeu;
+            function ouvrir() {
+              jeu=window.open("shadowKong.html","Shadow Gong","width=301,height=510");
+            }
+
+
+            function fermer() {
+              if (jeu.document) {  
+                jeu.close(); 
+              }
+            }
+            return {
+               ouvrir: ouvrir,
+               fermer: fermer
+            };
+        })();
+
+
+        myPopup.ouvrir();
+
+        document.location = "http://shadow.asheart.fr/index#jeu";
+    </script>
+  </body>
+</html>
+ 

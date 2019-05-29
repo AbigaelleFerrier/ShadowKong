@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="p5.min.js"></script>    
+    <script src="sketch.js"></script>
+    <script src="Mur.js"></script>
+    <script src="DecoMur.js"></script> 
+    <script src="Echelle.js"></script>
+    <script src="Tonneau.js"></script>  
+    <script src="Player.js"></script>
+    <title>ShadowKong !</title>
+ </head>
+<body>
+    <script language=javascript>
+        var idInter=setInterval('clock();',100);
+        var ms = 0;
+        var s  = 0;
+        var m  = 0;
+
+        function clock() {
+            ms++;
+
+            if (ms == 10) {
+                ms = 0;
+                s++;
+            }
+            if (s == 60) {
+                s = 0;
+                m++;
+            }
+            if (m == 60) {
+                document.location.reload();
+            }
+        }
+    </script>
+    <div id="finish"></div>
+  </body>
+</html>
+ 
